@@ -8,20 +8,28 @@ body {
   background-color: #333;
 }
 
+header  {
+  margin: 0 auto 50px ;
+  width: 100%;
+  background-color: #eee;
+  text-align: center;
+}
+
 .slider-container {
   margin: 10px auto;
   width: 800px;
-  height: 250px;
+  height:400px;
   position: relative;
 }
 
 .slider-container img {
   position: absolute;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.3 s;
   z-index: 1;
   width: inherit;
   height: inherit;
+  border-radius: 50px;
 }
 
 .slider-container .active {
@@ -40,6 +48,8 @@ body {
   z-index: 2;
   border-radius: 6px;
   cursor: pointer;
+  border-radius: 50px;
+
 }
 
 .slider-controls {
@@ -108,4 +118,18 @@ body {
 .next:hover,
 .prev:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 800px) {
+  .slider-container {
+    width: 350px;
+    height: 200px;
+  }
+
+  .slider-controls {
+    width: 300px;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+  }
 }
