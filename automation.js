@@ -3,7 +3,7 @@ var sliderImages = Array.from(
   document.querySelectorAll(".slider-container img")
 );
 
-// get number of slides
+// get number of slides.
 var slidesCount = sliderImages.length;
 
 // set current slide
